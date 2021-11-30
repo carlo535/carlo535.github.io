@@ -1,0 +1,135 @@
+@import url(https://fonts.googleapis.com/css?family=Courgette);
+ 
+body{
+ text-align: center;
+ font-family: 'courgette', cursive;
+ background-image: url("flor.jpg");
+ background-attachment: fixed;
+ opacity:1;
+}
+
+h1 {
+ font-family:  'Courgette', cursive;
+ text-align: center;
+ text-decoration: underline;
+ color:black;
+ background: linear-gradient(90deg, 
+     rgba(255, 255, 255, 0) 0%, 
+     rgba(255, 255, 255, 0.2) 25%, 
+     rgba(255, 255, 255, 0.2) 75%, 
+     rgba(255, 255, 255, 0) 100%);
+    box-shadow: 10 10 25px rgba(0, 0, 0, 0.1),
+     inset 0 0 1px rgba(255, 255, 255, 0.6);
+}
+
+h2 {
+ color:rgb(255, 165, 0);
+ font-size: 15px;
+  background: linear-gradient(90deg, 
+     rgba(255, 255, 255, 0) 0%, 
+     rgba(255, 255, 255, 0.2) 25%, 
+     rgba(255, 255, 255, 0.2) 75%, 
+     rgba(255, 255, 255, 0) 100%);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1),
+     inset 0 0 1px rgba(255, 255, 255, 0.6);
+}
+
+.texto {
+ background: linear-gradient(90deg, 
+     rgba(255, 255, 255, 0) 0%, 
+     rgba(255, 255, 255, 0.2) 25%, 
+     rgba(255, 255, 255, 0.2) 75%, 
+     rgba(255, 255, 255, 0) 100%);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1),
+     inset 0 0 1px rgba(255, 255, 255, 0.6);
+}
+
+p {
+ padding: 0px;
+ color: rgb(255, 179, 39);
+ font-size: 19px;
+}
+
+
+svg {
+ animation: bit 1s infinite; 
+ -webkit-animation: bit 1s infinite;
+ transition:transform 1s;
+ -webkit-transition:transform 1s;
+ -webkit-animation-delay: 6s; 
+ animation-delay: 6s;
+}
+
+#myHeart {
+ stroke-width:5px;
+ fill-opacity:0;
+}
+
+svg path {
+ stroke:rgb(186, 145, 106);
+ stroke-dasharray:1300;
+ stroke-dashoffset: 0;
+ stroke-width:3px;
+ fill-opacity:0;
+ animation: anim 12s linear forwards; 
+ -webkit-animation: anim 12s linear forwards;
+}
+
+@keyframes anim {
+0%
+ {
+   stroke-dashoffset: 1000;
+   fill:rgba(255,0,0,0);
+ }
+ 
+50% {
+   stroke-dashoffset: 0;
+   fill:rgba(255,0,0,0);
+   fill-opacity:0;
+ }
+
+100% {
+   fill:rgba(255,0,0,1);
+   fill-opacity:0.5;
+ }
+}
+
+@-webkit-keyframes anim {
+ 0%
+ {
+   stroke-dashoffset: 1000;
+   fill:rgba(255,0,0,0);
+ }50% {
+   stroke-dashoffset: 0;
+   fill:rgba(255,0,0,0);
+   fill-opacity:0;
+ }
+ 100% {
+   fill:rgba(255,0,0,1);
+   fill-opacity:0.5;
+ }
+}
+@keyframes bit {
+0%{
+   transform:scale(1);
+ }
+ 50%{
+   transform:scale(1.2);
+ }
+ 100%{
+   transform:scale(1);
+ }
+}
+
+@-webkit-keyframes bit {   
+ 0% {
+      transform:scale(1);
+ }
+ 50% {
+      transform:scale(1.2);
+}
+ 100% {
+      transform:scale(1);
+ }
+ }
+    
